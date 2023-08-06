@@ -1,0 +1,4 @@
+<label>First name</label>
+<input type="text" [(ngModel)]="fName" #firstName="ngModel">
+<p *ngIf="firstName.touched" style="color:red"> please enter name</p>
+<button (click)="submit()">Submit</button>
